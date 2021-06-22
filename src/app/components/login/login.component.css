@@ -1,0 +1,33 @@
+/*  
+.requireds:after {
+    content:" *";
+    color: red;
+}  */
+
+
+
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.75rem;
+    /* background-image:
+    
+    url("/assets/45.jpg");    */
+}
+
+.card{
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: blue;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+input.ng-touched.ng-invalid{
+    border:1px solid red;
+}

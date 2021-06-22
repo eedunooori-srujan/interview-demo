@@ -1,0 +1,49 @@
+ 
+ 
+ <div class="container">
+    <div class="card m-5"  >
+         <div class="card-body m-10"  >
+  
+ 
+             
+        <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)"> 
+            <div class="row mx-1 mb-2">
+        <h1 class="center "> Login</h1>
+        <a class="btn regbtn  ml-auto" routerLinkActive="active" routerLink="/signup">Signup</a>
+        
+    </div>
+    
+    <div class="form-row">
+      <div class="form-group col-md-12">
+          
+    <label for="exampleInputEmail1" class="requireds"  > username</label>
+    <input type= "text" class="form-control" id="username" aria-describedby="emailHelp"
+    required #name="ngModel"[class.is-invalid]="name.invalid" name = "username" placeholder = "Username" ngModel> 
+    
+     </div></div>
+   
+     <div class="form-row">
+      <div class="form-group col-md-12">
+
+        <label for="exampleInputPassword1" class="requireds" width="300px" >Password</label>
+        <input type = "password"
+        
+        required #name="ngModel"[class.is-invalid]="name.invalid"   
+         name = "password" placeholder = "password"  class="form-control" id="exampleInputPassword1" ngModel>
+        
+    
+    </div>
+     
+    </div>
+    <br>
+   
+    <div class="container">
+        <button  class="btn btn-primary" input type = "submit" value = "submit"  >Login
+        </button> 
+ 
+    </div>
+  </form>
+  </div></div></div>
+
+
+  
